@@ -143,7 +143,8 @@ main .conteudo {
 
 @media (max-width: 425px) {
     main .personagem .imagem {
-        height: auto;
+        width: 100vw;
+        height: 100vh;
     }
 
     .conteudo .logo {
@@ -160,11 +161,25 @@ main .conteudo {
     }
 
     .botoes {
+        margin-top: 100px;
         padding: 20px;
         top: -20%;
     }
 
     .botoes .botao img {
         max-width: 50px;
+    }
+}
+
+@media (max-width: 399px) {
+    main .personagem .imagem {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .botoes {
+        margin-top: 100px;
+        padding: 20px;
     }
 }
